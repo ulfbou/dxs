@@ -1,0 +1,9 @@
+<Project>
+	<Target Name="BanForbiddenReferences"
+			BeforeTargets="CoreCompile"
+			Label="Enforce Layering Rules">
+
+		<Error Condition="$([System.String]::Copy('$(MSBuildProjectDirectory)').Contains('executors')) AND @(ProjectReference->AnyHaveMetadataValue('Filename','Dx.Infrastructure'))"
+			   Text="SOP 4.2 VIOLATION: Executors cannot reference Infrastructure" />
+	</Target>
+</Project>
