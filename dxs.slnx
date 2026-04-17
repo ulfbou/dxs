@@ -17,4 +17,7 @@
   <Folder Name="/src/contracts/">
     <Project Path="src/contracts/Dx.Contracts/Dx.Contracts.csproj" />
   </Folder>
+  <Folder Name="/src/engine/">
+    <Project Path="src/engine/Dx.Core.Engine.Abstractions/Dx.Core.Engine.Abstractions.csproj" />
+  </Folder>
 </Solution>
