@@ -1,0 +1,40 @@
+name: Behavior
+description: Intentional contract-impacting change
+labels: ["type:behavior","risk:contract-impacting"]
+body:
+    - type: textarea
+    id: problem
+    attributes:
+      label: Problem
+      description: What behavior changes and why
+    validations:
+      required: true
+    - type: input
+    id: invariant
+    attributes:
+      label: Contract Section to Amend
+      description: Exact section to be changed
+      placeholder: "SESSION_LOG_MODEL §4.4"
+    validations:
+      required: true
+    - type: dropdown
+    id: adr
+    attributes:
+      label: ADR Required
+      options: ["yes", "no"]
+      default: 0
+    validations:
+      required: true
+    - type: textarea
+    id: scope_boundary
+    attributes:
+      label: Scope Boundary (Does NOT)
+    validations:
+      required: true
+    - type: textarea
+    id: blocktype
+    attributes:
+      label: BlockType Impact
+      description: List BlockTypes added/changed/removed
+    validations:
+      required: true

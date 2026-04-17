@@ -1,0 +1,13 @@
+- name: type:bug
+- name: type:feature
+- name: type:architecture
+- name: type:sop-violation
+- name: area:contracts
+- name: area:planning
+- name: area:engine
+- name: area:executors
+- name: area:infrastructure
+- name: area:cli
+- name: priority:p0
+- name: priority:p1
+- name: good-first-issue

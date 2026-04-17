@@ -1,0 +1,16 @@
+name: Feature
+body:
+  - type: input
+    id: assembly
+    attributes:
+      label: Target assembly
+  - type: dropdown
+    id: block
+    attributes:
+      label: New BlockType required?
+      options: [yes, no]
+  - type: dropdown
+    id: engine
+    attributes:
+      label: Touches Engine?
+      options: [yes, no]

@@ -1,0 +1,17 @@
+[
+  {
+    "title": "Phase 1 - Structural Impossibility",
+    "description": "Engine authority and enforcement",
+    "due_on": "2026-06-01"
+  },
+  {
+    "title": "Phase 2 - Snapshot Recovery",
+    "description": "SOP 3.3-3.4",
+    "due_on": "2026-07-15"
+  },
+  {
+    "title": "Phase 3 - Production Hardening",
+    "description": "Async, analyzers",
+    "due_on": "2026-09-01"
+  }
+]

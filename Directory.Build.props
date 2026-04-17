@@ -1,0 +1,5 @@
+<Project>
+  <Import Project="build/NamespaceGuard.targets" />
+  <Import Project="build/ValidateExecutors.targets" />
+  <Import Project="build/ArchitectureTests.props" />
+</Project>

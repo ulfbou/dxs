@@ -1,0 +1,29 @@
+name: Docs Gap
+description: Contract exists but /docs incomplete
+labels: ["type:docs-gap"]
+body:
+    - type: textarea
+    id: problem
+    attributes:
+      label: Problem
+      description: What is ambiguous or missing
+    validations:
+      required: true
+    - type: input
+    id: invariant
+    attributes:
+      label: Contract Section Requiring Clarification
+    validations:
+      required: true
+    - type: textarea
+    id: scope_boundary
+    attributes:
+      label: Scope Boundary (Does NOT)
+    validations:
+      required: true
+    - type: textarea
+    id: clarification
+    attributes:
+      label: Required Clarification
+    validations:
+      required: true

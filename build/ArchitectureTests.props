@@ -1,0 +1,17 @@
+<Project>
+	<PropertyGroup Label="Repository Paths">
+		<RepoRoot>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)../'))</RepoRoot>
+	</PropertyGroup>
+
+	<Target Name="RunArchitectureTests"
+			AfterTargets="Build"
+			Condition="'$(MSBuildProjectName)' == 'Dx.Architecture.Tests'"
+			Label="Run Architecture Tests">
+
+		<Message Importance="high" Text="[ArchitectureTests] Running tests" />
+
+		<Exec WorkingDirectory="$(RepoRoot)"
+			  Command='dotnet test "tests/Dx.Architecture.Tests/Dx.Architecture.Tests.csproj" --no-build --no-restore'
+			  StandardOutputImportance="low" />
+	</Target>
+</Project>

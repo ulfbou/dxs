@@ -1,0 +1,14 @@
+name: Architecture
+body:
+  - type: input
+    id: sop
+    attributes:
+      label: SOP section
+  - type: textarea
+    id: graph
+    attributes:
+      label: Dependency impact
+  - type: textarea
+    id: enforcement
+    attributes:
+      label: Enforcement plan

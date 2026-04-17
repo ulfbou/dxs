@@ -1,0 +1,14 @@
+name: Bug
+body:
+  - type: textarea
+    id: sop
+    attributes:
+      label: SOP violation
+  - type: textarea
+    id: repro
+    attributes:
+      label: Reproduction
+  - type: textarea
+    id: expected
+    attributes:
+      label: Expected structural guarantee

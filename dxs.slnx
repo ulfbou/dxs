@@ -1,0 +1,62 @@
+<Solution>
+  <Folder Name="/build/">
+    <File Path="build/ArchitectureTests.props" />
+    <File Path="build/NamespaceGuard.targets" />
+    <File Path="build/ValidateExecutors.targets" />
+  </Folder>
+  <Folder Name="/docs/">
+    <File Path="docs/ARCHITECTURE.md" />
+    <File Path="docs/CONTRIBUTING.md" />
+    <File Path="docs/dependency-graph.md" />
+    <File Path="docs/README.md" />
+    <File Path="docs/SOP.md" />
+  </Folder>
+  <Folder Name="/docs/internal/">
+    <File Path="docs/internal/000-internal-constitution-and-invariant-test-suite.md" />
+    <File Path="docs/internal/001-sql-migration.md" />
+  </Folder>
+  <Folder Name="/docs/roadmap/">
+    <File Path="docs/roadmap/NEXT-3-SPECS.md" />
+  </Folder>
+  <Folder Name="/docs/specs/">
+    <File Path="docs/specs/SPEC-TEMPLATE.md" />
+  </Folder>
+  <Folder Name="/scripts/">
+    <File Path="scripts/setup-github.sh" />
+  </Folder>
+  <Folder Name="/Solution Items/">
+    <File Path=".gitignore" />
+    <File Path="Directory.Build.props" />
+    <File Path="LICENSE" />
+    <File Path="README.md" />
+  </Folder>
+  <Folder Name="/src/" />
+  <Folder Name="/src/cli/">
+    <Project Path="src/cli/Dx.Cli/Dx.Cli.csproj" />
+  </Folder>
+  <Folder Name="/src/contracts/">
+    <Project Path="src/contracts/Dx.Contracts/Dx.Contracts.csproj" />
+  </Folder>
+  <Folder Name="/src/engine/">
+    <Project Path="src/engine/Dx.Core.Engine.Abstractions/Dx.Core.Engine.Abstractions.csproj" />
+    <Project Path="src/engine/Dx.Core.Engine/Dx.Core.Engine.csproj" />
+  </Folder>
+  <Folder Name="/src/executors/">
+    <Project Path="src/executors/Dx.Executors/Dx.Executors.csproj" />
+  </Folder>
+  <Folder Name="/src/infrastructure/">
+    <Project Path="src/infrastructure/Dx.Infrastructure.Abstractions/Dx.Infrastructure.Abstractions.csproj" />
+    <Project Path="src/infrastructure/Dx.Infrastructure.FileSystem/Dx.Infrastructure.FileSystem.csproj" />
+    <Project Path="src/infrastructure/Dx.Infrastructure.Sqlite/Dx.Infrastructure.Sqlite.csproj" />
+  </Folder>
+  <Folder Name="/src/planning/">
+    <Project Path="src/planning/Dx.Core.Planning/Dx.Core.Planning.csproj" />
+  </Folder>
+  <Folder Name="/src/tools/">
+    <Project Path="src/tools/ArchitectureValidator/ArchitectureValidator.csproj" />
+    <Project Path="src/tools/ExecutorValidator/ExecutorValidator.csproj" />
+  </Folder>
+  <Folder Name="/tests/">
+    <Project Path="tests/Dx.Architecture.Tests/Dx.Architecture.Tests.csproj" />
+  </Folder>
+</Solution>
