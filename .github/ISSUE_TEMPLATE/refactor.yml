@@ -1,0 +1,33 @@
+name: Refactor
+description: Structural change with zero semantic change
+labels: ["type:refactor"]
+body:
+    - type: textarea
+    id: problem
+    attributes:
+      label: Problem
+      description: What structure changes and why
+    validations:
+      required: true
+    - type: input
+    id: invariant
+    attributes:
+      label: Invariant Preserved
+      description: Exact contract section that remains unchanged
+      placeholder: "EXECUTION_CONTRACT §7.1"
+    validations:
+      required: true
+    - type: textarea
+    id: scope_boundary
+    attributes:
+      label: Scope Boundary (Does NOT)
+      description: No semantic or behavioral change permitted
+    validations:
+      required: true
+    - type: textarea
+    id: proof
+    attributes:
+      label: Proof of No Semantic Change
+      description: Tests or invariants that prove equivalence
+    validations:
+      required: true

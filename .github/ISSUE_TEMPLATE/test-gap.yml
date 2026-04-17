@@ -1,0 +1,31 @@
+name: Test Gap
+description: Missing enforcement of existing contract
+labels: ["type:test-gap"]
+body:
+    - type: textarea
+    id: problem
+    attributes:
+      label: Problem
+      description: What invariant is untested
+    validations:
+      required: true
+    - type: input
+    id: invariant
+    attributes:
+      label: Invariant Impact
+      description: Exact contract section untested
+    validations:
+      required: true
+    - type: textarea
+    id: scope_boundary
+    attributes:
+      label: Scope Boundary (Does NOT)
+    validations:
+      required: true
+    - type: input
+    id: location
+    attributes:
+      label: Proposed Test Location
+      description: e.g., tests/Dx.Architecture.Tests/InvariantTests.cs
+    validations:
+      required: true

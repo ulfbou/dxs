@@ -1,0 +1,34 @@
+name: Bug
+description: Contract violation in current code
+labels: ["type:bug"]
+body:
+    - type: textarea
+    id: problem
+    attributes:
+      label: Problem
+      description: One sentence describing deviation from contract
+      placeholder: "Dispatcher allows mutation outside transaction boundary"
+    validations:
+      required: true
+    - type: input
+    id: invariant
+    attributes:
+      label: Invariant Impact
+      description: Exact section violated. Format: EXECUTION_CONTRACT §X.Y or SESSION_LOG_MODEL §X.Y
+      placeholder: "EXECUTION_CONTRACT §4.1"
+    validations:
+      required: true
+    - type: textarea
+    id: scope_boundary
+    attributes:
+      label: Scope Boundary (Does NOT)
+      description: Explicit list of what is excluded
+    validations:
+      required: true
+    - type: textarea
+    id: reproduction
+    attributes:
+      label: Reproduction / Evidence
+      description: Deterministic steps or failing test name
+    validations:
+      required: true

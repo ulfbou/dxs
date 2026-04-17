@@ -1,0 +1,19 @@
+<Project>
+	<PropertyGroup Label="Repository Paths">
+		<RepoRoot>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)../'))</RepoRoot>
+	</PropertyGroup>
+
+	<Target Name="ValidateExecutors"
+			AfterTargets="Build"
+			Condition="'$(MSBuildProjectName)' == 'ExecutorValidator'"
+			Label="Run Executor Validation">
+
+		<Message Importance="high" Text="[ValidateExecutors] Running $(TargetFileName)" />
+
+		<!-- Exec task has no Label parameter -->
+		<Exec WorkingDirectory="$(RepoRoot)"
+			  Command='dotnet "$(TargetPath)"'
+			  StandardOutputImportance="high"
+			  StandardErrorImportance="high" />
+	</Target>
+</Project>
