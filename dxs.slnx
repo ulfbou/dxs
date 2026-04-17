@@ -13,4 +13,8 @@
     <File Path="LICENSE" />
     <File Path="README.md" />
   </Folder>
+  <Folder Name="/src/" />
+  <Folder Name="/src/contracts/">
+    <Project Path="src/contracts/Dx.Contracts/Dx.Contracts.csproj" />
+  </Folder>
 </Solution>
