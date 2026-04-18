@@ -1,8 +1,18 @@
-<Solution>
+﻿<Solution>
   <Folder Name="/build/">
     <File Path="build/ArchitectureTests.props" />
     <File Path="build/NamespaceGuard.targets" />
     <File Path="build/ValidateExecutors.targets" />
+  </Folder>
+  <Folder Name="/docs/">
+    <File Path="docs/ARCHITECTURE.md" />
+    <File Path="docs/CONTRIBUTING.md" />
+    <File Path="docs/README.md" />
+    <File Path="docs/SOP.md" />
+    <File Path="docs/dependency-graph.md" />
+  </Folder>
+  <Folder Name="/docs/internal/">
+    <File Path="docs/internal/000-internal-constitution-and-invariant-test-suite.md" />
   </Folder>
   <Folder Name="/scripts/">
     <File Path="scripts/setup-github.sh" />
@@ -13,7 +23,6 @@
     <File Path="LICENSE" />
     <File Path="README.md" />
   </Folder>
-  <Folder Name="/src/" />
   <Folder Name="/src/contracts/">
     <Project Path="src/contracts/Dx.Contracts/Dx.Contracts.csproj" />
   </Folder>
